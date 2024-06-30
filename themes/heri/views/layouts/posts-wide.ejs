@@ -1,0 +1,75 @@
+<%
+const catPosts = all[$catalog.split('/')[0]].filter(i => 
+    !i['$hidden'] 
+    && (
+        !$categoriesEnabled || i.page['category'] === $uid
+        || 
+        $categoriesNested && i.page['category'].split('/')[0] === $uid
+        )
+    );
+const posts = sortCatalog(catPosts, 'page.date', 'desc', 'date');
+%>
+<%- include('/_/head'); %>
+
+<body>
+    <%- include('/_/header'); %>
+    <section class="container">
+        <%- include('/_/nav'); %>
+    </section>
+
+    <section class="container text-start" style="flex: 1 1">
+        <h1 class="text-center text-uppercase mb-4"><%= page['title'] %></h1>
+        <% if (page['description']) { %>
+            <p class="py-3"><%= page['description'] %></p>
+        <% } %>
+        <% if (page['excerpt']) { %>
+            <%- renderEJSContent(page.excerpt, 'div') %>
+        <% } %>
+    </section>
+
+    <section class="posts" style="flex: 1 1">
+        <% posts.forEach(post => { %>
+        <article class="d-flex flex-column gap-3" data-id="<%= post.$uri.replace(/\.html$/, '') %>">
+            <figure>
+                <a href="<%= post.$uri %>" target="<%= post['$target'] || '' %>">
+                <% if ('string' === typeof post['ogImage']) { %>
+                    <img src="<%= 'undefined' === typeof gallery ? post.ogImage : thumbSrc(post.ogImage, gallery) %>" alt="<%= post['title'] %>">
+                <% } else if (post.page['image']) { %>
+                    <% const imageSrc = Array.isArray(post.page['image']) ? post.page['image'][0] : post.page['image']; %>
+                    <img src="<%= 'undefined' === typeof gallery ? imageSrc : thumbSrc(imageSrc, gallery) %>" alt="<%= post['title'] %>">
+                <% } else { %>
+                    <img src="/img/404.jpg" alt="<%= $l['postImageNotFound'] %>">
+                <% } %>
+                <% if (post.page['imageText']) { %>
+                    <div class="content"><%- renderEJSContent(post.page.imageText, 'div') %></div>
+                <% } %>
+                </a>
+            </figure>
+            <header>
+                <div class="date mb-3" data-date="<%= post.page['date'] %>">
+                    <span class="badge bg-danger"><%= post.page['date'] %></span>
+                    <% if ($categoriesEnabled && post.page['category']) { %>
+                        <span class="badge bg-info">
+                            <a href="<%= post.page.category %>.html">
+                                <%= categories[post.page.category] %>
+                            </a>
+                        </span>
+                    <% } %>
+                </div>
+                <h2 class="h4">
+                    <a href="<%= post.$uri %>" target="<%= post['$target'] || '' %>"><%= post.page['title'] %></a>
+                </h2>
+            </header>
+        </article>
+        <% }) %>
+    </section>
+
+    <% if (page['content']) { %>
+    <section class="promo flex-column align-items-center justify-content-between h-90v" style="background-image: url(/img/uk/the-road-0.jpg)">
+        <%- renderEJSContent(page['content']); %>
+    </section>
+    <% } %>
+
+    <%- include('/_/footer'); %>
+</body>
+<%- include('/_/foot'); %>

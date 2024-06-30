@@ -1,0 +1,18 @@
+$refer: /uk/vystavky/rashizm-ce.html
+
+title: Exhibition Ruscism is... about Russian quasi-ideology
+ogImage: /img/vystavky/rashizm-ce/_U2A0154@4-3-center-h1080px-q54.jpg
+
+page:
+  title: Exhibition Ruscism is... about Russian quasi-ideology
+  date: "2023-05-08"
+  category: exhibitions
+  image: /img/vystavky/rashizm-ce/_U2A0154@4-3-center-h1080px-q54.jpg
+  content: 
+    - p: The 16 stands of the exhibition on Russian quasi-ideology present the characteristic features of ruscism in detailed descriptions and illustrations.
+    - p: The terrorist country manifests in its policy the cults of the truth/bonds (skriepy) and the leader, genocide, imperial revanchism, aggressive tyranny, criminal propaganda, xenophobia, barbarism, and the desire to destroy cultural heritage.
+    - p: Employees of the Center for Strategic Communications and Information Security, the Ukrainian Institute of National Remembrance, the Maidan Museum, and the Heritage Emergency Response Initiative worked on the project for over a month.
+    - p: The exhibition materials show in detail the true nature of the Putin regime. The authors turned to historical parallels and collected facts from the past and the current war.
+
+gallery:
+  directory: /img/vystavky/rashizm-ce

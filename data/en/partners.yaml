@@ -1,0 +1,102 @@
+$refer: /uk/partnery.html
+
+$template: layout/partners
+
+title: Partners - Heritage Rescue Headquarters
+description: Systematic cooperation with volunteer initiatives, organizations and governments in Ukraine and abroad, primarily with those working in the field of assistance to cultural institutions and responding to challenges to cultural heritage, contributes to better coordination of efforts and more systematic analysis of the situation regarding threats and needs, targeted provision assistance and saving of resources for storage and transportation.
+page:
+  title: Partners
+  content:
+    $class: container content-text
+    article:
+      - p: Systematic cooperation with volunteer initiatives, organizations and governments in Ukraine and abroad, primarily with those working in the field of assistance to cultural institutions and responding to challenges to cultural heritage, contributes to better coordination of efforts and more systematic analysis of the situation regarding threats and needs, targeted providing assistance and saving resources for storage and transportation.
+      - p: "The main directions of cooperation: exchange of information with international organizations, cultural institutions and specialists in the field of cultural heritage regarding the situation, threats and needs, coordination in the provision of material assistance to cultural institutions, in particular in the selection of necessary materials and their delivery, expert consultations and trainings A separate direction of the partnership is the organization of field expeditions to record damage and loss of cultural heritage objects, documentation of Russian crimes against culture, preparation for early recovery and reconstruction, promotion of Ukrainian culture and advocacy of aid."
+      - p: "Since its establishment, the Headquarters has cooperated or is cooperating with the following governmental and non-governmental institutions, organizations and initiatives:"
+
+partners:
+  - group: Ukrainian partners
+    list:
+      - title: Ministry of Culture and Information Policy of Ukraine;
+        url: https://mcip.gov.ua/
+      - title: Ukrainian Institute of National Memory;
+        url: https://uinp.gov.ua/
+      - title: Cultural Heritage Rescue Center (Lviv);
+        url: https://www.facebook.com/profile.php?id=100081325312579&locale=vi_VN
+      - title: Museum Crisis Center (Lviv);
+        url: https://www.mccukraine.com/uk
+      - title: Western Ukrainian Union of Museums. Volunteer initiative "Lviv knight";
+        url: https://www.facebook.com/lvivskyjlycar/?locale=uk_UA
+      - title: Ukrainian Society for the Protection of Historical and Cultural Monuments. Ukrainian Committee of ISOM;
+        url: https://www.facebook.com/icom.ukraine/?locale=uk_UA
+      - title: Ukrainian ISOMOS Committee;
+        url: https://www.facebook.com/icomosukraine?locale=uk_UA
+      - title: Ukrainian ICCROM coordinator;
+        url: https://www.facebook.com/ICCROMUKRAINE/
+      - title: Ukrainian Fulbright Circle;
+        url: https://www.fulbrightcircle.org.ua/
+      - title: Ukrainian Center for the Development of Museum Affairs;
+        url: https://www.facebook.com/ucrms/?locale=uk_UA
+      - title: National Reserve "Kyiv-Pechersk Lavra";
+        url: https://kplavra.kyiv.ua/
+      - title: State Natural History Museum of the National Academy of Sciences of Ukraine;
+        url: http://www.smnh.org/ua/
+      - title: National Center of Folk Culture "Ivan Honchar Museum";
+        url: https://honchar.org.ua/
+      - title: Volunteer Headquarters of the Student Brotherhood of Lviv Oblast;
+        url: https://www.sbl.org.ua/
+      - title: Cultural institution "Between the ears";
+        url: https://mizhvukhamy.com/
+      - title: Public Health Alliance;
+        url: https://aph.org.ua/uk/golovna/
+      - title: NGO "Union of ATO Participants and Volunteers";
+        url: https://www.facebook.com/%D0%93%D1%80%D0%BE%D0%BC%D0%B0%D0%B4%D1%81%D1%8C%D0%BA%D0 %B0-%D0%BE%D1%80%D0%B3%D0%B0%D0%BD%D1%96%D0%B7%D0%B0%D1%86%D1%96%D1%8F-%D0 %A1%D0%BF%D1%96%D0%BB%D0%BA%D0%B0-%D1%83%D1%87%D0%B0%D1%81%D0%BD%D0%B8%D0% BA%D1%96%D0%B2-%D1%82%D0%B0-%D0%B2%D0%BE%D0%BB%D0%BE%D0%BD%D1%82%D0%B5%D1% 80%D1%96%D0%B2-%D0%90%D0%A2%D0%9E-103850545646143/
+      - title: Institute of Geoinformation Systems; Department of Architecture and Restoration of Lviv Polytechnic National University;
+        url: https://lpnu.ua/atr
+      - title: |
+         "Skeiron" company - digitization of cultural heritage
+        url: https://skeiron.com.ua/
+
+  - group: Foreign partners
+    list:
+      - title: United Nations Educational, Scientific and Cultural Organization (UNESCO)
+        url: https://www.unesco.org/en
+      - title: International Center for Research, Preservation and Restoration of Cultural Values (ICCROM)
+        url: https://www.iccrom.org/
+      - title: International Council of Museums (ICOM)
+        url: https://icom.museum/en/
+      - title: International Council for the Protection of Monuments and Historic Sites (ISOMOS)
+        url: https://www.icomos.org/en
+      - title: ICOM Committee on Increasing the Resilience of Museums to Emergency Situations (ICOM-DRMC)
+        url: https://drmc.mini.icom.museum/
+      - title: All-European Federation of Associations for the Protection of Cultural Heritage "Europa Nostra"
+        url: https://www.europanostra.org/
+      - title: Heritage for Peace
+        url: https://www.heritageforpeace.org/
+      - title: Prince Claus Foundation (Netherlands)
+        url: https://princeclausfund.org/
+      - title: Smithsonian Cultural Rescue Initiative (SCRI)
+        url: https://www.facebook.com/SmithsonianCRI/
+      - title: British Council Cultural Preservation Fund
+        url: https://www.britishcouncil.org/
+      - title: Department for Digital, Culture, Media and Sport (UK)
+        url: https://www.gov.uk/government/organisations/department-for-digital-culture-media-sport
+      - title: Gerda Henkel Foundation (Dusseldorf, Germany)
+        url: https://www.gerda-henkel-stiftung.de/
+      - title: Whiting Foundation (New York, USA)
+        url: https://www.whiting.org/
+      - title: ALIPH Foundation (Switzerland)
+        url: https://www.aliph-foundation.org/
+      - title: Association for responding to threats to cultural heritage - CHIEF (Italy)
+        url: https://www.facebook.com/chiefonlus
+      - title: Polish Institute in Kyiv
+        url: https://instytutpolski.pl/kyiv/
+      - title: Ukraine Emergency Cultural Heritage Rescue Initiative (USA, Canada) ICOMOS Canada
+        url: https://canada.icomos.org/
+      - title: Logistics Center "HUB SOS-UA" (Mlyny, Poland)
+        url: https://www.instagram.com/hub.sos.ua/
+      - title: World Monument Fund (World Monument Fund, WMF)
+        url: https://www.wmf.org/
+      - title: Global Heritage Fund
+        url: https://globalheritagefund.org/
+      - title: The Metropolitan Museum of Art
+        url: https://www.metmuseum.org/

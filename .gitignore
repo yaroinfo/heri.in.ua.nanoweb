@@ -1,0 +1,12 @@
+dist/
+logs/
+nano/
+node_modules/
+
+static/css/heri/index.css
+static/css/heri/index.css.map
+static/css/nw/index.css
+static/css/nw/index.css.map
+static/js/heri/index.min.js
+static/js/nw/index.min.js
+static/js/bootstrap.bundle.min.js

@@ -1,0 +1,27 @@
+$refer: /uk/dopomoha.html
+
+title: Assistance to Museums and Cultural Institutions, Support for Cultural Workers – Heritage Rescue Headquarters
+description: Assistance to cultural institutions and organizations that take care of cultural heritage sites has been the primary task of the HERI from the very beginning of its activity. Since February 24, 2022, thousands of cultural institutions have been facing and overcoming challenges presented by the war.
+
+page:
+  title: Assistance to Museums and Cultural Institutions, Support for Cultural Workers
+  content: 
+    - $class: content-max flex-column pb-5
+      article:
+        - p: "Assistance to cultural institutions and organizations that take care of cultural heritage sites has been the primary task of the HERI from the very beginning of its activity. Since February 24, 2022, thousands of cultural institutions have been facing and overcoming challenges presented by the war. Considering that each region and institution's issues vary, HERI decided to form separate areas of activity to maximize the aid's effectiveness:"
+        - ul:
+          - li: 
+            - b: resource and material aid to cultural institutions. 
+            - " HERI created a humanitarian hub, which serves as a drop-off and distribution center for international humanitarian aid for cultural institutions: packaging materials, equipment, tools, and materials for the protection, preservation, and restoration of museum collections, archives, libraries, etc."
+          - li:
+            - b: evacuation of cultural heritage to secure locations. 
+            - " Since the beginning, HERI has been and will continue to provide resource assistance for safer evacuation, such as specialized materials for packaging and transportation, consultations, and organizational assistance."
+          - li:
+            - b: personalized aid for cultural workers. 
+            - " With the help of the international community, the HERI was able to provide financial support to museum workers, monument keepers, librarians, and archivists. Among those who received help are people who have lost their homes, or ability to work, or were injured, and activists, who protect Ukrainian cultural heritage risking their lives. In the first weeks of the full-scale invasion, the HERI provided humanitarian and financial assistance to museum staff in cities under fire or temporary occupation."
+          - li:
+            - b: trainings, consultations, workshops, and other educational events. 
+            - " The HERI actively engages with international professionals, who are willing to share their experience of saving and protecting cultural heritage in times of emergency. The Initiative also analyzes and shares the Ukrainian experience with the world."
+          - li:
+            - b: legal and organizational consultations. 
+            - " The HERI organized a contact line where institutions can get personalized advice on their issues. "

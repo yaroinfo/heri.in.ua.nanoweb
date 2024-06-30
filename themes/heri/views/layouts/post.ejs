@@ -1,0 +1,48 @@
+<%
+const dateChain = [];
+if ('string' === typeof page['date']) page['date'].split('-').forEach(p => dateChain.push(p));
+%>
+<%- include('/_/head'); %>
+
+<body>
+    <%- include('/_/header'); %>
+    <section class="container">
+        <%- include('/_/nav'); %>
+    </section>
+
+    <section class="post pb-5">
+        <article class="container align-items-start">
+            <%- include('/_/post/gallery') %>
+            <div class="text-wrapper">
+                <header>
+                    <h1 class="pb-3">
+                        <%= page['title'] %>
+                    </h1>
+                    <div class="date mb-3 d-flex flex-wrap gap-4">
+                        <span class="d-flex gap-2">
+                            <span class="d-none d-mg-inline">Дата: </span>
+                            <% dateChain.forEach((d, i) => { %>
+                                <a href="<%= $catalog %>.html?date=<%= dateChain.slice(0, i + 1).join('-') %>" class="btn btn-outline-danger">
+                                    <%= d %>
+                                </a>
+                            <% }) %>
+                        </span>
+                        <% if ($categoriesEnabled && page['category']) { %>
+                            <span>
+                                <span class="d-none d-mg-inline">Розділ: </span>
+                                <a href="/<%= $lang + '/' + page['category'] %>.html" class="btn btn-info" data-nw-nav="active"><%= categories[page.category] %></a>
+                            </span>
+                        <% } %>
+                    </div>
+                </header>
+                <%- renderEJSContent(page['content'], 'div') %>
+                <footer class="d-lg-none">
+                    <%- include('/_/post/comments') %>
+                </footer>
+            </div>
+        </article>
+    </section>
+
+    <%- include('/_/footer'); %>
+</body>
+<%- include('/_/foot'); %>

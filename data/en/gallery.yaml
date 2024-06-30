@@ -1,0 +1,13 @@
+title: Our gallery - Heritage Rescue Headquarters
+description: Gallery of our actions to save the heritage of the Ukrainian nation.
+
+page:
+  title: Our gallery
+  excerpt: The international seminar on the protection of cultural heritage was held in Odesa
+
+gallery:
+  full: true
+  class: gallery-full
+  resolution: 3-2-center-w1200px-h800px-q63
+  thumb: 1-1-center-h300px-q81
+  directory: /img/gallery

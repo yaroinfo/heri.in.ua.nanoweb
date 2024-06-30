@@ -1,0 +1,188 @@
+.news {
+    figure.news-img {
+        width: 100%;
+    }
+    .news-short {
+        flex: 1 1 20rem;
+        word-break: break-word;
+        overflow-wrap: break-word;
+    }
+    article + article {
+        margin-top: 3rem;
+    }
+}
+section.post, section.posts {
+    figure {
+        flex: 1 1 50%;
+        position: relative;
+        max-width: 100%;
+        img {
+            max-width: 100%;
+            cursor: pointer;
+        }
+    }
+    .text-wrapper {
+        flex: 1 1 50%;
+        figure {
+            padding: 1rem;
+        }
+        header {
+            text-align: start;
+        }
+        b {
+            color: $danger;
+            white-space: nowrap;
+        }
+    }
+    .social {
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        li {
+            a {
+                @extend .d-inline-flex;
+                @extend .flex-row;
+                @extend .align-items-center;
+                @extend .gap-3;
+                @extend .text-decoration-none;
+                @extend .bg-white;
+                @extend .p-2;
+                @extend .mt-1;
+
+                &:hover, &:active, &:focus {
+                    background-color: $white !important;
+                }
+            }
+        }
+        [class^="icon-"] {
+            font-size: $h2-font-size;
+        }
+        [class~="icon-youtube"], [class~="icon-instagram"] {
+            color: $danger;
+        }
+        [class~="icon-facebook"] {
+            color: $primary;
+        }
+        [class~="icon-linkedin"] {
+            color: $secondary;
+        }
+        [class~="icon-x"], [class~="icon-medium"], [class~="icon-tiktok"] {
+            color: $black;
+        }
+    }
+    blockquote {
+        @extend .blockquote;
+        padding: 1rem;
+        margin-bottom: 0;
+        font-size: 1rem;
+        font-style: italic;
+
+        cite {
+            font-style: normal;
+        }
+    }
+}
+section.post {
+    article {
+        @extend .d-flex;
+        @extend .flex-column;
+        @extend .flex-lg-row;
+        @extend .gap-3;
+    }
+}
+section.posts {
+    @extend .container;
+    @extend .d-flex;
+    @extend .flex-wrap;
+    @extend .justify-content-center;
+    @extend .gap-3;
+    article {
+        flex: 1 1 20rem;
+        max-width: 30rem;
+        > figure, > header {
+            flex: 1 1;
+        }
+    }
+    figure {
+        @extend .m-0;
+        text-align: center;
+    }
+    img {
+        max-height: 50vh;
+    }
+    h2 {
+        a {
+            text-decoration: none;
+            &:hover, &:active, &:focus {
+                text-decoration: underline;
+            }
+        }
+    }
+    footer {
+        ul {
+            @extend .d-flex;
+            @extend .justify-content-center;
+            @extend .gap-3;
+        }
+    }
+}
+section.stories {
+    article {
+        @extend .d-flex;
+        @extend .flex-column;
+        @extend .flex-lg-row;
+        @extend .gap-3;
+        @extend .gap-lg-5;
+        > * {
+            flex: 1 1;
+        }
+        figure {
+            align-self: start;
+            position: relative;
+            margin: 0;
+
+            .brand {
+                position: absolute;
+                right: .5rem;
+                bottom: .5rem;
+                max-width: 50%;
+                max-height: 6rem;
+            }
+        }
+        &:nth-child(2n) {
+            figure {
+                @extend .order-lg-2;
+            }
+        }
+        &+ article {
+            @extend .mt-3;
+            @extend .mt-lg-5;
+        }
+    }
+}
+@include media-breakpoint-up(md) {
+    .news {
+        figure.news-img {
+            min-width: 33%;
+            max-width: 50%; 
+        }
+    }
+    section.post {
+        figure {
+            flex-basis: 42%;
+        }
+        .text-wrapper {
+            flex-basis: 58%;
+        }
+    }
+}
+@include media-breakpoint-up(lg) {
+    section.post {
+        .text-wrapper {
+            text-align: justify;
+            word-break: break-word;
+        }
+    }
+}

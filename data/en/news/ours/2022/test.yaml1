@@ -1,0 +1,36 @@
+$refer: /uk/novyny/nashi/2022/20221130-test.html
+
+title: New Stage of Solidarity Scholarship Announced. Application Deadline January 10 - Heritage Rescue Headquarters
+
+page:
+  category: news/ours
+  date: "2023-12-07"
+  title: New Stage of Solidarity Scholarship Announced. Application Deadline January 10 - Heritage Rescue Headquarters
+  heading1: New Stage of Solidarity Scholarship Announced. Application Deadline January 10
+  excerpt: Expedition to rescue and museumize the kitchen cabinet and ceramic rooster pitcher - objects
+  image:
+    - /img/музеєфікація-подій-війни/Бородянка-01.jpg
+    - /img/музеєфікація-подій-війни/Бородянка-02.jpg
+    - /img/музеєфікація-подій-війни/Буча-01.jpg
+    - /img/музеєфікація-подій-війни/Буча-02.jpg
+    - /img/музеєфікація-подій-війни/Вязівка-01.jpg
+    - /img/музеєфікація-подій-війни/Вязівка-02.jpg
+    - /img/музеєфікація-подій-війни/Вязівка-03.jpg
+    - /img/музеєфікація-подій-війни/Тростянець-01.jpg
+    - /img/музеєфікація-подій-війни/Тростянець-02.jpg
+    - /img/музеєфікація-подій-війни/Тростянець-03.jpg
+    - /img/музеєфікація-подій-війни/Тростянець-04.jpg
+
+  content: 
+    - h2: "April 14 – Borodyanka, Kyiv Region."
+    - div: Expedition to rescue and museumize the kitchen cabinet and ceramic rooster pitcher - symbols of Ukrainian resilience preserved and included in the Museum Fund of Ukraine
+    - $class: mt-5
+      h2: "April 21 – Bucha, Kyiv Region."
+    - div: Collection of artifacts and oral testimonies
+    - $class: mt-5
+      h2: April 30 – Vyazivka Village, Zhytomyr Region.
+    - div: Study of the condition of the Church of the Nativity of the Blessed Virgin Mary (built in 1862, a monument of national architectural significance, protective number 108). On March 7, the wooden church was severely damaged by the shock wave from a bomb dropped nearby by Russians.
+    - $class: mt-5
+      h2: August 11-13 – Expedition to Trostianets and Okhtyrka in the Sumy Region.
+    - div: Inspection of the "Round Yard" estate, Trostianets Local History Museum (Kenig's Estate), and the house of the estates manager L. Kenig, the merchant Kurilov's shop in Trostianets, Okhtyrka Local History Museum, district house of culture in Okhtyrka, Sumy Cadet Corps.
+

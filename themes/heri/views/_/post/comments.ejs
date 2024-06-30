@@ -1,0 +1,6 @@
+<% if ('undefined' !== typeof comments) { %>
+    <div class="social mt-3 p-3">
+        <%= $l['commmentOnSocial'] %>
+        <%- include('comments-ul'); %>
+    </div>
+<% } %>

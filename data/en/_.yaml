@@ -1,0 +1,26 @@
+$lang: en
+
+$l:
+  linkToFacebook: Facebook page
+  searchBtn: Search
+  searchTitle: Site search
+  searchModalClose: Close search
+  searchPlaceholder: Headquarters contacts
+  searchReadMore: Open
+  hotline: Hotline
+  hotlineText: consultations, assistance, reporting an emergency
+  supportBtn: Support
+  registerOfAttackedHeritageBtn: Register of Attacked Heritage
+  readMore: Read more
+  goPrev: Назад
+  goNext: Вперед
+
+  toggleNav: Відкрити/сховати меню
+  logoTitle: Штаб порятунку спадщини
+
+  'Close modal button': ""
+  'Download PDF': Download PDF
+  'Download original image': Download original
+  'Open gallery': Open gallery
+  'Website navigation': Navigation
+  'Dark mode': Dark mode

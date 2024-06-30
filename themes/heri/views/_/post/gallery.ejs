@@ -1,0 +1,15 @@
+<% if ('object' === typeof gallery && gallery['items']) { %>
+    <% if ('slider' === gallery['mode']) { %>
+        <%- include('/_/slides', { slides: gallery.items, title: page['title'] }) %>
+    <% } else { %>
+        <%- include('/_/gallery', { gallery, title: page['title'] }) %>
+    <% } %>
+<% } else if (page['image'] && Array.isArray(page['image'])) { %>
+    <%- include('/_/gallery', { slides: page.image, title: page['title'] }) %>
+<% } else { %>
+<figure class="py-3 mb-0">
+    <% if (page['image']) { %>
+        <%- renderEJSContent(page['image'], 'img') %>
+    <% } %>
+</figure>
+<% } %>

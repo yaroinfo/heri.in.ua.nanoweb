@@ -1,0 +1,51 @@
+- title: Про нас
+  href: "#"
+  children:
+    - title: Мета
+      href: meta.html
+    - title: Історія
+      href: istoriia.html
+    - title: Команда
+      href: komanda.html
+      children:
+        - title: Відео про нас
+          href: video-about.html
+        - title: Світ про нас
+          href: world-about.html
+- title: Що ми робимо
+  href: "#"
+  children:
+    # - title: Проєкти
+    #   href: proekti.html
+    #   style: bg-warning
+    - title: Допомога
+      href: dopomoha.html
+      children:
+        - title: Стипендія солідарності
+          href: stypendiia-solidarnosti.html
+        - title: Пакувальні та рятувальні матеріали
+          href: pakuvalni-materialy.html
+        - title: Контактна лінія
+          href: hariacha-liniia.html
+    - title: Документування
+      href: dokumentuvannia.html
+    - title: Корисні матеріали
+      href: korysni-materialy.html
+    - title: Музеєфікації війни
+      href: muzeefikaciia-viyny.html
+    - title: Звіти
+      href: zvity.html
+    # - title: Команди порятунку
+    #   href: команди-порятунку.html
+    - title: Виставки
+      href: vystavky.html
+    - title: Тренінги
+      href: treninhy.html
+    - title: Форум
+      href: forum.html
+- title: Партнери
+  href: partnery.html
+- title: Новини
+  href: novyny.html
+- title: Галерея
+  href: gallery.html

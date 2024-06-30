@@ -1,0 +1,15 @@
+.fs-7 {
+    font-size: 0.75rem;
+}
+.carousel-control-next, .carousel-control-prev {
+    background-color: rgba($white, 0.6);
+}
+
+@include color-mode(dark) {
+    .navbar {
+        --#{$prefix}navbar-color: $white;
+    }
+    .navbar-nav {
+        --#{$prefix}nav-link-color: $white;
+    }
+}

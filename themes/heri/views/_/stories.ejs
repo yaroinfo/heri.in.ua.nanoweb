@@ -1,0 +1,42 @@
+<% 
+let currentYear;
+sortCatalog(stories, 'date', 'asc', 'date').forEach(s => {
+    const year = s.date.slice(0, 4);
+%>
+    <% if (year !== currentYear) { %>
+        <h3 class="display-3 my-5 text-center"><%= currentYear = year %></h3>
+    <% } %>
+    <article>
+        <% if (s['image']) { %>
+        <figure>
+            <img src="<%= s['image'] %>" alt="<%= s['title'] %>">
+            <% if (s['brand'] && global['brands']?.[s.brand]) { %>
+                <img class="brand <%= global.brands[s.brand]['class'] %>" src="<%= global.brands[s.brand]['img'] %>" alt="<%= global.brands[s.brand]['alt'] %>" title="<%= global.brands[s.brand]['alt'] %>">
+            <% } %>
+        </figure>
+        <% } %>
+        <div>
+            <% if (s['url']) { %>
+            <h2><a href="<%= s['url'] %>" target="_blank"><%= s['title'] %></a></h2>
+            <% } else { %>
+            <h2><%= s['title'] %></h2>
+            <% } %>
+            <% if (s['date']) { %>
+            <p>
+                <span class="badge bg-secondary"><%= s['date'] %></span>
+            </p>
+            <% } %>
+            <% if (s['desc']) { %>
+            <p><%= s['desc'] %></p>
+            <% } %>
+            <% if (s['pdf']) { %>
+            <p class="text-center text-lg-start">
+                <a class="btn btn-outline-primary" href="<%= s['pdf'] %>" target="_blank">
+                    <span class="icon-download me-2"></span>
+                    <span><%= l('Download PDF', $l) %></span>
+                </a>
+            </p>
+            <% } %>
+        </div>
+    </article>
+<% }) %>

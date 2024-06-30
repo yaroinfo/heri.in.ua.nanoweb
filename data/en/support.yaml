@@ -1,0 +1,21 @@
+title: How to help – Heritage Rescue Headquarters
+description: You can help the Heritage Rescue Headquarters here
+ogImage: /img/logo.png
+
+page:
+  title: How to help
+  description: You can help the Heritage Rescue Headquarters here
+  content:
+    - $class: py-5
+      article:
+        - $class: lead mb-0
+          p: "If you want to support us in our activities:"
+        - p: 
+          - i: Accounts of Tustan and AKURE, 
+          - br: true
+          - i: Agency of Culture Resilience
+        - Hryvnia
+        - EDPOU code 44709733
+        - A/c UA353253650000000260010043007 at JSC "KREDOBANK"
+        - "Address: 04053, Kyiv,"
+        - Kudryavska St., building 3/5, office 209

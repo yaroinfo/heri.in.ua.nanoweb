@@ -1,0 +1,9 @@
+$refer: /uk/novyny.html
+$template: /layout/posts
+$catalog: news
+
+category: News
+title: News – Heritage Rescue Headquarters
+
+page:
+  title: News

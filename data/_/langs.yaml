@@ -1,0 +1,11 @@
+- title: Укр
+  code: uk
+  url: /
+  dir: uk
+- title: Eng
+  code: en
+  url: /en/index.html
+  dir: en
+# - title: Spanish
+#   code: es
+#   url: /es/

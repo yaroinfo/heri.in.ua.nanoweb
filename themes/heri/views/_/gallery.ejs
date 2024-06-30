@@ -1,0 +1,61 @@
+<%
+let idValue = 'undefined' === typeof id ? 'slider' : id;
+%>
+<section class="gallery" id="<%= idValue %>">
+    <% if ('object' === typeof gallery && gallery['items']) gallery.items.forEach((item, i) => { %>
+        <% if (gallery['thumbFirst'] && i >= gallery['thumbFirst']) return; %>
+        <figure onclick="openGalleryModal(<%= i %>)">
+            <img src="<%= item['thumb'] || item['src'] %>" class="<%= !gallery['full'] && i ? 'd-none' : 'd-block' %> d-lg-block w-100" alt="<%= item['alt'] || ('undefined' !== typeof title ? title : '') %>">
+        </figure>
+    <% }) %>
+    <% if ('undefined' !== typeof slides) slides.forEach((url, i) => { %>
+    <figure onclick="openGalleryModal(<%= i %>)">
+        <img src="<%= url %>" class="d-block w-100" alt="<%= 'undefined' !== typeof title ? title : '' %>">
+    </figure>
+    <% }) %>
+    <% if ('undefined' !== typeof slides || 'undefined' !== typeof gallery) { %>
+    <button class="btn btn-outline-primary" onclick="openGalleryModal(0)">
+        <%= l('Open gallery', $l) %>
+    </button>
+    <% } %>
+</section>
+
+<!-- Modal Structure -->
+<div class="modal fade" id="galleryModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen modal-dialog-centered">
+        <div class="modal-content gallery-modal">
+            <!-- Carousel within the modal -->
+            <div id="galleryCarousel" class="carousel slide">
+                <div class="carousel-inner">
+                    <% if ('object' === typeof gallery && gallery['items']) gallery.items.forEach((item, i) => { %>
+                        <div class="carousel-item <%= 0 === i ? 'active' : '' %>">
+                            <img src="<%= item['orig'] %>" class="d-block w-100" alt="<%= item['alt'] || ('undefined' !== typeof title ? title : '') %>">
+                            <% if (item['orig']) { %>
+                            <a href="<%= item['orig'] %>" target="_blank" class="btn btn-primary d-none">
+                                <span class="icon-download me-2"></span>
+                                <span><%= l('Download original image', $l) %></span>
+                            </a>
+                            <% } %>
+                        </div>
+                    <% }) %>
+                    <% if ('undefined' !== typeof slides) slides.forEach((url, i) => { %>
+                        <div class="carousel-item <%= 0 === i ? 'active' : '' %>">
+                            <img src="<%= url %>" class="d-block w-100" alt="<%= 'undefined' !== typeof title ? title : '' %>">
+                        </div>
+                    <% }) %>
+                </div>
+                <!-- Carousel Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden"><%= $l['goPrev'] %></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden"><%= $l['goNext'] %></span>
+                </button>
+            </div>
+            <!-- Close Button -->
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">&times;</button>
+        </div>
+    </div>
+</div>

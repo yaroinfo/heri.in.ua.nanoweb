@@ -1,0 +1,37 @@
+aaslh:
+  img: /img/brand/aaslh.png
+  alt: AASLH
+  class: bg-white p-2
+cbsnews:
+  img: /img/brand/cbsnews.svg
+  alt: CBS News
+cer:
+  img: /img/brand/cer.svg
+  alt: Cultural Emergency Response
+ersucla:
+  img: /img/brand/ersucla.jpeg
+  alt: "ERS UCLA : Center for European and Russian Studies"
+guardian:
+  img: /img/brand/guardian.svg
+  alt: The Guardian
+mediasapiens:
+  img: /img/brand/mediasapiens.png
+  alt: MediaSapiens
+nbcnews:
+  img: /img/brand/nbcnews.svg
+  alt: NBC News
+newyorktimes:
+  img: /img/brand/newyorktimes.svg
+  alt: The New York Times
+time:
+  img: /img/brand/time.svg
+  alt: TIME
+usembassy:
+  img: /img/brand/usembassy.png
+  alt: US Embassy
+volkskrant:
+  img: /img/brand/volkskrant.svg
+  alt: de Volkskrant
+washingtonpost:
+  img: /img/brand/washingtonpost.svg
+  alt: The Washington Post

@@ -1,0 +1,16 @@
+$refer: /uk/istoriia.html
+
+title: History - Heritage Rescue Headquarters
+description: The initiators of the creation of the Headquarters in March 2022 were the National Museum of the Revolution of Dignity (Maidan Museum), NGO "Maidan Museum", NGO "Tustan", State Historical and Cultural Reserve "Tustan".
+ogImage: /img/logo.png
+
+page:
+  title: History
+  content:
+    - $class: content-max pb-5
+      article:
+        - p:
+          - strong: Initiators of creation
+          - |
+            The National Museum of the Revolution of Dignity (Maidan Museum), NGO "Maidan Museum", NGO "Tustan", State Historical and Cultural Reserve "Tustan" became the headquarters in March 2022.
+        - p: The headquarters coordinates its activities with the Ministry of Culture and Information Policy of Ukraine in the format of a working group on the preservation of cultural heritage during the martial law regime (Order of the ICIP No. 112 of 07.03.2022), as well as national and international organizations and auxiliary initiatives.

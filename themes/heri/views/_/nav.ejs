@@ -1,0 +1,136 @@
+<nav class="navbar navbar-expand-lg pb-5">
+    <div class="w-100 d-flex flex-column flex-wrap align-items-center gap-4">
+        <div class="d-lg-none">
+            <a class="navbar-brand" href="<%= global.langs.filter(l => l.code == $lang)[0].url %>">
+                <img src="/img/logo-<%= $lang %>.png" alt="<%= $l['logoTitle'] || 'Штаб порятунку спадщини' %>">
+            </a>
+        </div>
+        <div>
+            <button class="navbar-toggler d-flex d-lg-none align-items-center gap-2" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="<%= $l['toggleNav'] || 'Відкрити/сховати меню' %>">
+                <span class="navbar-toggler-icon"></span>
+                <span><%= l('Website navigation', $l) %></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse w-100 flex-column gap-3" id="mainNav">
+            <div class="d-flex gap-5 w-100 justify-content-between order-2 order-lg-1">
+                <a class="navbar-brand d-none d-lg-inline" href="<%= global.langs.filter(l => l.code == $lang)[0].url %>">
+                    <img src="/img/logo-<%= $lang %>.png" alt="<%= $l['logoTitle'] || 'Штаб порятунку спадщини' %>">
+                </a>
+                <div class="d-flex flex-column justify-content-between gap-3 mt-3">
+                    <% if (global['partners']?.['header'] && global.partners.header.length) { %>
+                    <div class="d-flex flex-wrap justify-content-center justify-content-lg-between gap-5 order-2 order-lg-1">
+                        <% global.partners.header.forEach(p => { %>
+                        <a class="partner" href="<%= p.url %>" target="_blank">
+                            <% if (p['img']) { %> 
+                            <img src="<%= p['img'].replace('{lang}', $lang) %>" alt="<%= p.title %>">
+                            <% } %>
+                        </a>
+                        <% }) %>
+                    </div>
+                    <% } %>
+                    <div class="d-flex flex-column flex-lg-row flex-wrap align-items-center justify-content-end gap-3 order-1 order-lg-2">
+                        <div class="d-flex flex-column justify-content-center">
+                            <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#searchModal">
+                                <span class="icon-search"></span>
+                                <span>
+                                    <%= $l['searchBtn'] %>
+                                </span>
+                            </button>
+                        </div>
+                        <ul class="list-unstyled mb-0 d-flex gap-2 locales align-items-center">
+                            <% global.langs.forEach((l, i) => { %>
+                                <li class="nav-item">
+                                    <% if (l.code === $lang) { %>
+                                        <span class="nav-link p-3 active"><%= l.title %></span>
+                                    <% } else { %>
+                                        <a href="<%= $alternates[l.code] || l.url %>" class="nav-link p-3"><%= l.title %></a>
+                                    <% } %>
+                                </li>
+                                <% if (i < global.langs.length - 1) { %>
+                                    <li>|</li>
+                                <% } %>
+                            <% }) %>
+                        </ul>
+                        <div class="hotline d-none">
+                            <p class="mb-0 fs-5 text-uppercase">
+                                <b class="text-nowrap"><%= $l['hotline'] || 'Гаряча лінія' %>:</b>
+                                <a href="tel:<%= global.hotline.tel %>" class="text-nowrap text-danger"><b><%= global.hotline.phone %></b></a>
+                            </p>
+                            <p class="fs-7 m-0"><%= $l['hotlineText'] || 'консультації, допомога, інформування про надзвичайну подію' %></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-100 d-flex flex-column flex-lg-row flex-wrap gap-3 align-items-center order-1 order-lg-2">
+                <ul class="navbar-nav me-lg-auto align-items-center gap-2">
+                    <% function renderNav(items, level = 0) { %>
+                        <% items.forEach(function(item) { %>
+                            <li class="nav-item<%= 0 === level && item.children ? ' dropdown' : '' %>">
+                                <a
+                                    class="nav-link<%= 0 === level && item.children ? ' dropdown-toggle' : '' %> <%= level < 2 ? 'text-uppercase' : '' %> <%= item['style'] || '' %>"
+                                    href="<%= item.href %>"
+                                    <%- 0 === level && item.children ? 'data-bs-toggle="dropdown"' : '' %>
+                                >
+                                    <%= item.title %>
+                                </a>
+                                <% if (item.children) { %>
+                                    <ul class="<%= 0 === level ? 'dropdown-menu' : 'nav' %>">
+                                        <%= renderNav(item.children, level + 1) %>
+                                    </ul>
+                                <% } %>
+                            </li>
+                        <% }); %>
+                    <% } %>
+                    <%= renderNav(global.nav) %>
+                </ul>
+                <div class="d-flex flex-wrap align-items-center justify-content-center gap-3">
+                    <a class="btn btn-sm bg-black text-white text-uppercase" href="support.html">
+                        <%= $l['supportBtn'] || 'Підтримати' %>
+                    </a>
+                    <a class="btn btn-sm btn-danger text-white text-uppercase" href="register.html">
+                        <%= $l['registerOfAttackedHeritageBtn'] || 'Реєстр атакованої спадщини' %>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="searchModalLabel">
+                    <%= $l['searchTitle'] %>
+                </h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><%- l('Close modal button', $l) %></button>
+            </div>
+            <div class="modal-body search-body">
+                <!-- Search Input Field -->
+                <input type="text" class="form-control form-control-lg" id="searchInput"
+                    placeholder="<%= $l['searchPlaceholder'] %>">
+                <div id="searchResults" class="search-results">
+                </div>
+                <template id="searchResultTemplate">
+                    <article>
+                        <figure>
+                            <a href="#" data-url><img src="" alt="" data-img></a>
+                        </figure>
+                        <footer>
+                            <a href="#" data-title data-url></a>
+                            <p data-desc></p>
+                            <a href="#" class="btn btn-sm btn-outline-info d-none" data-url>
+                                <%= $l['searchReadMore'] %>
+                            </a>
+                        </footer>
+                    </article>
+                </template>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                    <%= $l['searchModalClose'] %>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

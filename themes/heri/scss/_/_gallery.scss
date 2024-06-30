@@ -1,0 +1,186 @@
+.gallery-modal {
+    justify-content: center;
+    .carousel-item {
+        position: relative;
+        &.active, &.carousel-item-next.carousel-item-start, &.carousel-item-prev.carousel-item-end {
+            @extend .d-flex;
+            @extend .justify-content-center;
+            @extend .align-items-center;
+        }
+        img {
+            max-height: 100vh;
+            max-width: 100%;
+            width: auto !important;
+            height: auto;
+            cursor: pointer;
+        }
+        // download button
+        a.btn {
+            position: absolute;
+            bottom: 1rem;
+        }
+    }
+    .btn-close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 3rem;
+        color: $black;
+        background: none;
+        opacity: 1;
+        z-index: 2;
+        line-height: 1;
+    }
+}
+.gallery {
+    @extend .d-flex;
+    @extend .flex-wrap;
+    @extend .align-items-start;
+    @extend .justify-content-start;
+    @extend .gap-lg-3;
+    figure {
+        margin: 0;
+        cursor:pointer;
+        flex: 1 1 calc(50% - 1rem);
+        text-align: center;
+    }
+    .btn {
+        margin-top: 1rem;
+        flex: 1 1 100%;
+    }
+    .slide {
+        width: 100%;
+        // height: 36vh;
+        .carousel-inner, .carousel-item, .w-100 {
+            max-height: inherit;
+            // height: 36vh;
+        }
+        .carousel-item {
+            flex-direction: column;
+            align-items: center;
+            &.active, &.carousel-item-next.carousel-item-start, &.carousel-item-prev.carousel-item-end {
+                @extend .d-flex;
+                @extend .justify-content-center;
+                @extend .align-items-center;
+            }
+        }
+        .w-100 {
+            width: auto !important;
+        }
+        // download button
+        a.btn {
+            position: absolute;
+            bottom: 1rem;
+        }
+    }
+}
+.gallery-content-wrapper {
+    @extend .container;
+    &.d-flex {
+        section {
+            flex: 1 1 50%;
+        }
+    }
+    &.gallery-full {
+        @extend .mx-auto;
+        max-width: 1320px!important;
+        .gallery {
+            @extend .gap-3;
+            @extend .align-items-center;
+            @extend .justify-content-center;
+            figure {
+                flex: 1 1 calc(33% - 1rem);
+                img {
+                  
+                }
+                &:hover, &:active, &:focus {
+                    img {
+                        filter: grayscale(1);
+                    }
+                }
+            }
+            .btn {
+                @extend .mx-5;
+                flex: 1 1 9rem;
+                max-width: 9rem;
+                max-height: 9rem;
+                aspect-ratio: 1/1;
+            }
+            .carousel-inner {
+                .btn {
+                    max-width: max-content;
+                    aspect-ratio: auto;
+                    white-space: nowrap;
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .gallery-modal {
+        .btn-close {
+            right: 0.5rem;
+            font-size: 4rem;
+        }
+    }
+    .gallery-content-wrapper.gallery-full .gallery figure {
+        flex: 1 1 calc(25% - 1rem);
+    }
+}
+@include media-breakpoint-up(lg) {
+    section.post .gallery {
+        max-width: 50%;
+        figure {
+            &:first-child {
+                flex-basis: 100%;
+            }
+        }
+    }
+    .gallery {
+        .slide {
+            // height: 54vh;
+            .carousel-inner, .carousel-item, .w-100 {
+                // height: 54vh;
+            }    
+            .w-100 {
+                width: auto !important;
+            }
+        }
+    }
+    .gallery-modal {
+        .btn-close {
+            right: 0.5rem;
+            font-size: 6rem;
+        }
+    }
+    .gallery-content-wrapper.gallery-full .gallery figure {
+        flex: 1 1 calc(25% - 1rem);
+    }
+}
+@include media-breakpoint-up(xl) {
+    .gallery {
+        .slide {
+            // height: 63vh;
+            .carousel-inner, .carousel-item, .w-100 {
+                // height: 63vh;
+            }    
+        }
+    }
+    .gallery-content-wrapper.gallery-full .gallery figure {
+        flex: 1 1 calc(25% - 1rem);
+    }
+}
+@include media-breakpoint-up(xxl) {
+    .gallery {
+        .slide {
+            // height: 72vh;
+            .carousel-inner, .carousel-item, .w-100 {
+                // height: 72vh;
+            }    
+        }
+    }
+    .gallery-content-wrapper.gallery-full .gallery figure {
+        flex: 1 1 calc(25% - 1rem);
+    }
+}

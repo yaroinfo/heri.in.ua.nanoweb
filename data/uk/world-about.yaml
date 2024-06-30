@@ -1,0 +1,133 @@
+# 
+# У форматі PDF дуже довго шукатИ публікації, завантажуватИ картинки і логотипи.
+# Бренди, які вже можна використовуватИ:
+# aaslh, cbsnews, cer, ersucla, guardian, mediasapiens, nbcnews, newyorktimes, time, usembassy, volkskrant, washingtonpost
+# всі вони доступі у каталозі: /web/data/_/brands.yaml
+# Формат кожної історії дуже простий і доступний знизу у блоці stories:
+#   date: Дата у форматі YYYY-MM-DD
+#   brand: Назва бренда, який є у каталозі: /web/data/_/brands.yaml
+#   image: Посилання на зображення, бажано завантажитИ його у репозиторій і там зберігатИ, у назві забратИ всі не латинські і спеціальні символи крім -_.
+#   title: Заголовок історії
+#   desc: Короткий опис
+#   url: Посилання на джерело
+#   pdf: Посилання на PDF документ, бажано завантажитИ його у репозиторій і там зберігатИ, у назві забратИ всі не латинські і спеціальні символи крім -_.
+#
+title: Світ про нас – Штаб порятунку спадщини
+description: Що про нас розказують інші люди у світі.
+ogImage: /img/logo.png
+
+page:
+  title: Світ про нас
+  content:
+    - $class: content-max pb-5
+      $data-bs-toggle: collapse
+      $href: "#collapseStories"
+      article:
+        - $class: alert alert-info p-5
+          div: Сторінка ще у розробці
+
+stories:
+  - date: 2022-05-19
+    brand: guardian
+    image: /img/world-about/2022/We-collect-symbols-of-the-resistance.avif
+    title: "‘We collect symbols of the resistance’: the Ukrainian museum working through the war"
+    desc: "From children’s dresses to molotov cocktails, the objects curated by Ihor Poshyvailo for the Maidan Museum preserve the tragedy and bravery of the conflict for future generations"
+    url: https://www.theguardian.com/culture/2022/may/19/ukraine-maidan-museum-objects-ihor-poshyvailo-kyiv-cockerel
+    pdf: /img/world-about/2022/We-collect-symbols-of-the-resistance.pdf
+
+  - date: 2023-04-06
+    brand: nbcnews
+    image: /img/world-about/2023/Just-the-way-the-Nazis-did.avif
+    title: "'Just the way the Nazis did': Evidence suggests Russians are stealing art from Ukraine on a World War II scale"
+    desc: “Our research suggests that this looting is state-sponsored by Russia,” said a researcher at the Smithsonian Institution, which is preparing a report on the massive scale of the theft.
+    url: https://www.nbcnews.com/news/world/russia-stealing-art-ukraine-nazi-level-world-war-2-rcna77879
+    pdf: /img/world-about/2023/Just-the-way-the-Nazis-did.pdf
+
+  - date: 2022-11-29
+    brand: cer
+    image: /img/world-about/2022/a-war-on-collective-memory.jpeg
+    title: A War on Collective Memory in Ukraine
+    desc: All over the world, first responders acted immediately to save lives. At the same time, two professionals in the cultural field, Ihor Poshyvailo and Vasyl Rozhko, came together to discuss options to support the battlefield where a war on collective memory was also being fought. Early on, Poshyvailo and Rozhko recognized that the existential nature of the war meant Ukraine was defending more than its territory– it was defending the very idea and reality of itself. 
+    url: https://www.culturalemergency.org/stories/a-war-on-collective-memory
+    pdf: /img/world-about/2022/a-war-on-collective-memory.pdf
+
+  - date: 2023-11-13
+    brand: cbsnews
+    image: /img/world-about/2023/ukraine-russia-heritage-culture-war-60-minutes-video.jpeg
+    title: Ukraine accuses Russia of targeting its culture, heritage and identity | 60 Minutes
+    desc: Ukraine has accused Russia of deliberately destroying cultural property. Investigators say Russian forces target churches, libraries, museums, and monuments as part of a war on Ukraine’s identity.
+    url: https://www.cbsnews.com/video/ukraine-russia-heritage-culture-war-60-minutes-video-2023-11-12/
+
+  - date: 2023-04-07
+    brand: ersucla
+    image: /img/world-about/2023/Identity-War-in-Ukraine-The-Power-of-Cultural-Resistance.jpeg
+    title: "Identity War in Ukraine: The Power of Cultural Resistance"
+    desc: |
+      Museums, libraries, archives and other cultural institutions responded to the threat in accordance with their capacities and military situation. The civilized world launched a "cultural lend-lease" for Ukraine, providing cultural institutions with packing and restoration materials, protective and emergency equipment, hard and cloud storages, humanitarian and financial assistance.
+    url: https://www.international.ucla.edu/euro/event/16046
+    pdf: /img/world-about/2023/Identity-War-in-Ukraine-The-Power-of-Cultural-Resistance.pdf
+
+  - date: 2022-03-19
+    brand: washingtonpost
+    image: /img/world-about/2022/A-lab-in-rural-Virginia-is-racing-to-preserve-Ukraine-cultural-heritage.jpeg
+    title: A lab in rural Virginia is racing to preserve Ukraine’s cultural heritage
+    desc: In the southwest corner of rural Virginia, about 5,000 miles from the war zone, a small but mighty team of archaeologists, historians and high-tech mapping experts are using sophisticated satellite imagery to help to protect Ukraine’s cultural heritage.
+    url: https://www.washingtonpost.com/arts-entertainment/2022/03/19/ukraine-cultural-heritage-preservation/
+    pdf: /img/world-about/2022/A-lab-in-rural-Virginia-is-racing-to-preserve-Ukraine-cultural-heritage.pdf
+
+  - date: 2023-01-06
+    brand: ersucla
+    image: /img/world-about/2023/Ukraine-and-Bosnia-Wars-to-eradicate-people-their-culture-and-memory.jpg
+    title: "Ukraine and Bosnia: Wars to eradicate people, their culture and memory"
+    desc: Ukrainians consider the war with Russia to have begun in 2014, when Russia seized Crimea and occupied parts of the Luhansk and Donetsk provinces of Eastern Ukraine. With Russia’s full-scale invasion of Ukraine on February 24, 2022, attacks on its cultural monuments and institutions increased sharply.
+    url: https://www.international.ucla.edu/euro/article/261090
+    pdf: /img/world-about/2023/Ukraine-and-Bosnia-Wars-to-eradicate-people-their-culture-and-memory.pdf
+
+  - date: 2022-02-24
+    brand: newyorktimes
+    image: /img/world-about/2022/Ukraine-museums-scramble-to-protect-their-collections.webp
+    title: Ukraine’s museums scramble to protect their collections.
+    desc: KYIV, Ukraine — At 4:30 a.m. on Thursday, Ihor Poshyvailo, the director of the Museum of Freedom here, was woken by the sound of explosions. He rushed outside to the street and saw airplanes flying overhead, he said. An hour later, he was in a meeting with officials from Ukraine’s Ministry of Culture trying to work out how the country’s museums could protect their collections.
+    url: https://www.nytimes.com/live/2022/02/24/world/russia-attacks-ukraine/ukraine-museums-russia-attacks?smid=url-share
+    pdf: /img/world-about/2022/Ukraine-museums-scramble-to-protect-their-collections.pdf
+
+  - date: 2022-03-29
+    brand: time
+    image: /img/world-about/2022/Ukrainian-Museums-Are-Racing-to-Save-Artifacts-That-Tell-the-Countrys-Story.webp
+    title: Ukrainian Museums Are Racing to Save Artifacts That Tell the Country’s Story
+    desc: The National Museum of Lviv in western Ukraine, one of the country’s biggest museums, was able to keep its collection intact through two world wars. And yet, over the last month, since Russia invaded Ukraine on Feb. 24, the museum has had to quickly dismantle its exhibitions.
+    url: https://time.com/6161734/ukraine-war-history-museums/
+    pdf: /img/world-about/2022/Ukrainian-Museums-Are-Racing-to-Save-Artifacts-That-Tell-the-Countrys-Story.pdf
+
+  - date: 2023-03-22
+    brand: volkskrant
+    image: /img/world-about/2023/op-deze-manier-proberen-oekraine-en-het-westen-het-cultureel-erfgoed-veilig-te-stellen-dat-rusland-wil-vernietigen.jpeg
+    title: Op deze manier proberen Oekraïne en het Westen het cultureel erfgoed veilig te stellen dat Rusland wil vernietigen
+    desc: Rusland probeert systematisch de Oekraïense cultuur uit te wissen, zien experts. Maar al in het begin van de oorlog heeft zich een omvangrijk internationaal netwerk gevormd van specialisten om cultureel erfgoed veilig te stellen. Wie en wat zijn in dit netwerk allemaal actief en wat doet iedereen precies?
+    url: https://www.volkskrant.nl/cultuur-media/op-deze-manier-proberen-oekraine-en-het-westen-het-cultureel-erfgoed-veilig-te-stellen-dat-rusland-wil-vernietigen~bb54c3ca/
+    pdf: /img/world-about/2023/op-deze-manier-proberen-oekraine-en-het-westen-het-cultureel-erfgoed-veilig-te-stellen-dat-rusland-wil-vernietigen.pdf
+
+  - date: 2022-05-23
+    brand: usembassy
+    image: /img/world-about/2022/War-in-Ukraine-damages-major-cultural-sites.jpeg
+    title: War in Ukraine damages major cultural sites
+    desc: “This is a struggle for our cultural heritage,” said Ihor Poshyvailo, general director of the National Memorial and the Maidan Museum, during an online discussion April 28 hosted by the National Museum of American Diplomacy.
+    url: https://it.usembassy.gov/slide/war-in-ukraine-damages-major-cultural-sites/
+    pdf: /img/world-about/2022/War-in-Ukraine-damages-major-cultural-sites.pdf
+    
+  - date: 2022-05-02
+    brand: aaslh
+    image: /img/world-about/2022/While-Speaking-About-Preserving-Ukrainian-Cultural-Heritage-Air-Raid-Warnings-Sounded.jpg
+    title: While Speaking About Preserving Ukrainian Cultural Heritage, Air Raid Warnings Sounded
+    desc: While speaking over Zoom recently, Ihor Poshyvailo had to pause when an air raid warning went off. In a sign of the resilience and determination of Poshyvailo and all others trying to preserve Ukraine’s cultural heritage, he continued undeterred with his presentation.
+    url: https://aaslh.org/preservingukrainianculture/
+    pdf: /img/world-about/2022/While-Speaking-About-Preserving-Ukrainian-Cultural-Heritage-Air-Raid-Warnings-Sounded.pdf
+
+  - date: 2023-12-13
+    brand: mediasapiens
+    image: /img/world-about/2023/Pid-blakytnym-shchytom-i-v-spysku-UNESKO.webp
+    title: Під «блакитним щитом» і в списку ЮНЕСКО. Як намагаються захистити пам’ятки культури в умовах війни
+    desc: |
+      За даними Міністерства культури та інформаційної політики, з 24 лютого 2022 року по 25 листопада 2023-го через російське повномасштабне вторгнення в Україні було зруйновано або пошкоджено 863 об’єкти культурної спадщини. За даними МКІП, ступінь пошкодження 177 об’єктів архітектури залишається невідомим.
+    url: https://ms.detector.media/trendi/post/33728/2023-12-13-pid-blakytnym-shchytom-i-v-spysku-yunesko-yak-namagayutsya-zakhystyty-pamyatky-kultury-v-umovakh-viyny/
+    pdf: /img/world-about/2023/Pid-blakytnym-shchytom-i-v-spysku-UNESKO.pdf

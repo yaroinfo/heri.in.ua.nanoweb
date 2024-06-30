@@ -1,0 +1,50 @@
+$theme: heri
+$layout: standard
+$lang: uk
+$host: https://heri.in.ua
+$icon: /img/logo.png
+
+$categoriesEnabled: true
+$categoriesNested: true
+
+$javascriptModules:
+  - bootstrap.bundle.min.js
+  - nw/index.min.js
+  - $theme/index.min.js
+$cssFiles:
+  - nw/index.css
+  - $theme/index.css
+$fontUris:
+  - https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,700;1,300;1,400;1,700&display=swap
+
+titleAffix: " • Штаб порятунку спадщини"
+
+ogImage: /img/logo.png
+
+gallery:
+  thumb: 1-1-center-h420px-q81
+
+$l:
+  linkToFacebook: Сторінка у Facebook
+  searchBtn: Шукати
+  searchTitle: Пошук по сайту
+  searchModalClose: Закрити пошук
+  searchPlaceholder: Порятунок спадщини
+  searchReadMore: Відкрити
+  hotline: Гаряча лінія
+  hotlineText: консультації, допомога, інформування про надзвичайну подію
+  supportBtn: Підтримати
+  registerOfAttackedHeritageBtn: Реєстр атакованої спадщини
+  readMore: Детальніше
+  goPrev: Назад
+  goNext: Вперед
+
+  toggleNav: Відкрити/сховати меню
+  logoTitle: Штаб порятунку спадщини
+
+  'Close modal button': ""
+  'Download PDF': 'Завантажити PDF'
+  'Download original image': Завантажити оригінал
+  'Open gallery': Відкрити галерею
+  'Website navigation': Навігація по сайту
+  'Dark mode': Нічний режим

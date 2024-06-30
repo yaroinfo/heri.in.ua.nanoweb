@@ -1,0 +1,11 @@
+title: Відео про нас – Штаб порятунку спадщини
+description: Що про нас показують інші люди у світі.
+ogImage: /img/logo.png
+
+page:
+  title: Відео про нас
+  content:
+    - $class: content-max pb-5
+      article:
+        - $class: alert alert-info p-5
+          div: Сторінка ще у розробці

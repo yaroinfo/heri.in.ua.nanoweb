@@ -1,0 +1,25 @@
+$refer: /uk/pakuvalni-materialy.html
+
+title: Packing and Rescue Materials - Heritage Rescue Headquarters
+ogImage: /img/packing-rescue-materials.jpg
+
+page:
+  title: Packing and rescue materials
+  image: /img/packing-rescue-materials.jpg
+  content:
+    - $class: container content-max py-3 pb-5
+      article:
+        - p:
+          - "The headquarters participated in the creation of a specialized web platform by the Ukrainian National Committee of ICOM and the Ukrainian Museum Development Center"
+          - $href: http://hub.promuseum.org/rm
+            $target: _blank
+            $rel: nofollow
+            a: HUB.PROMUSEUM.
+        - p: On this platform, you can familiarize yourself with the catalog of materials and services provided by donors, choose the desired items and place an order. Functionality is also provided for initiative coordinators, warehouse managers from various organizations, who can create an aid package and deliver it to the recipient in response to an order.
+        - p:
+          - How to order help on the HUB.PROMUSEUM portal -
+          - $href: /img/packing-manual.pdf
+            $target: _blank
+            a: here
+gallery:
+  class: d-flex flex-wrap

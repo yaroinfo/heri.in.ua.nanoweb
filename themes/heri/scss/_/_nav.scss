@@ -1,0 +1,89 @@
+.navbar {
+    .navbar-brand {
+        flex-grow: 1;
+        img {
+            max-width: 100%;
+            max-height: 9rem;
+        }
+    }
+    .navbar-nav {
+        .nav {
+            @extend .justify-content-center;
+        }
+        .nav-link {
+            @extend .text-center;
+            font-size: $navbar-link-font-size;
+            font-weight: $navbar-link-font-weight;
+
+            &:hover, &.text-info:hover {
+                color: $navbar-light-hover-color !important;
+            }
+            &:active, .active, &.text-info:active {
+                color: $navbar-light-active-color !important;
+            }
+        }
+        ul.dropdown-menu {
+            padding: 1rem;
+        }
+    }
+    .navbar-collapse {
+        &.show, &.collapsing {
+            display: flex;
+            padding-bottom: 2rem;
+            border-bottom: $border-width solid $primary;
+        }
+    }
+    a.partner {
+        img {
+            max-height: 4rem;
+        }
+    }
+    .dropdown-toggle::after {
+        display: none;
+    }
+    .hotline {
+        flex: 1 1 15rem;
+        padding: .5rem;
+        text-align: center;
+        border: 2px solid $primary;
+        border-radius: $border-radius;
+        background-color: rgba($primary, 0.3);
+    }
+    .locales {
+        .nav-link {
+            font-size: 1rem;
+            font-weight: normal;
+
+            &:hover, &.text-info:hover {
+                color: $navbar-light-hover-color !important;
+            }
+            &:active, &.text-info:active {
+                color: $navbar-light-active-color !important;
+            }
+            &.active {
+                color: $yellow !important;
+            }
+        }
+    }
+}
+.btn-xs {
+    @extend .btn-sm;
+    font-size: 0.8rem;
+    max-width: 13.5rem;
+}
+
+@include media-breakpoint-up(lg) {
+    .navbar {
+        .navbar-nav {
+            li:hover > .dropdown-menu {
+                display: block;
+            }
+            ul.dropdown-menu {
+                min-width: max-content;
+                ul.nav {
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}

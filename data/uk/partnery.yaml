@@ -1,0 +1,99 @@
+$template: layout/partners
+
+title: Партнери – Штаб порятунку спадщини
+description: Системна співпраця з волонтерськими ініціативами, організаціями та урядами в Україні й за кордоном, насамперед із тими, які працюють у сфері допомоги культурним інституціям та реагування на виклики культурній спадщині, сприяє кращій координації зусиль та системнішому аналізу ситуації щодо загроз і потреб, цільовому наданню допомоги та економії ресурсів на складування й перевезення.
+page:
+  title: Партнери
+  content:
+    $class: container content-text
+    article:
+      - p: Системна співпраця з волонтерськими ініціативами, організаціями та урядами в Україні й за кордоном, насамперед із тими, які працюють у сфері допомоги культурним інституціям та реагування на виклики культурній спадщині, сприяє кращій координації зусиль та системнішому аналізу ситуації щодо загроз і потреб, цільовому наданню допомоги та економії ресурсів на складування й перевезення.
+      - p: "Основні напрями співпраці: обмін інформацією з міжнародними організаціями, культурними закладами та фахівцями сфери культурної спадщини щодо ситуації, загроз і потреб, координація в наданні матеріальної допомоги культурним інституціям, зокрема в підборі необхідних матеріалів та в доставці їх, експертні консультації і тренінги. Окремим напрямом партнерства є організація польових експедицій із фіксації ушкоджень та втрат об’єктів культурної спадщини, документування злочинів рф проти культури, підготовка до раннього відновлення й відбудови, промоція української культури та адвокація допомоги."
+      - p: "Із часу свого заснування Штаб співпрацював або співпрацює з такими урядовими й неурядовими інституціями, організаціями та ініціативами:"
+
+partners:
+  - group: Українські партнери
+    list:
+      - title: Міністерство культури та інформаційної політики України;
+        url: https://mcip.gov.ua/
+      - title: Український інститут національної пам’яті;
+        url: https://uinp.gov.ua/
+      - title: Центр порятунку культурної спадщини (Львів);
+        url: https://www.facebook.com/profile.php?id=100081325312579&locale=vi_VN
+      - title: Музейний кризовий центр (Львів);
+        url: https://www.mccukraine.com/uk
+      - title: Західноукраїнська спілка музеїв. Волонтерська ініціатива «Львівський лицар»;
+        url: https://www.facebook.com/lvivskyjlycar/?locale=uk_UA
+      - title: Українське товариство охорони пам’яток історії та культури. Український комітет ІСОМ;
+        url: https://www.facebook.com/icom.ukraine/?locale=uk_UA
+      - title: Український комітет ІСОМОS;
+        url: https://www.facebook.com/icomosukraine?locale=uk_UA
+      - title: Український координатор ICCROM;
+        url: https://www.facebook.com/ICCROMUKRAINE/
+      - title: Українське Фулбрайтівське коло;
+        url: https://www.fulbrightcircle.org.ua/
+      - title: Український центр розвитку музейної справи;
+        url: https://www.facebook.com/ucrms/?locale=uk_UA
+      - title: Національний заповідник «Києво-Печерська лавра»;
+        url: https://kplavra.kyiv.ua/
+      - title: Державний природознавчий музей Національної академії наук України;
+        url: http://www.smnh.org/ua/
+      - title: Національний центр народної культури «Музей Івана Гончара»;
+        url: https://honchar.org.ua/
+      - title: Волонтерський штаб Студентського братства Львівщини;
+        url: https://www.sbl.org.ua/
+      - title: Культурна інституція «Між вухами»;
+        url: https://mizhvukhamy.com/
+      - title: Альянс громадського здоров’я;
+        url: https://aph.org.ua/uk/golovna/
+      - title: ГО «Спілка учасників та волонтерів АТО»;
+        url: https://www.facebook.com/%D0%93%D1%80%D0%BE%D0%BC%D0%B0%D0%B4%D1%81%D1%8C%D0%BA%D0%B0-%D0%BE%D1%80%D0%B3%D0%B0%D0%BD%D1%96%D0%B7%D0%B0%D1%86%D1%96%D1%8F-%D0%A1%D0%BF%D1%96%D0%BB%D0%BA%D0%B0-%D1%83%D1%87%D0%B0%D1%81%D0%BD%D0%B8%D0%BA%D1%96%D0%B2-%D1%82%D0%B0-%D0%B2%D0%BE%D0%BB%D0%BE%D0%BD%D1%82%D0%B5%D1%80%D1%96%D0%B2-%D0%90%D0%A2%D0%9E-103850545646143/
+      - title: Інститут геоінформаційних систем; Кафедра архітектури та реставрації Національного університету «Львівська політехніка»;
+        url: https://lpnu.ua/atr
+      - title: Компанія «Skeiron» – оцифрування культурної спадщини
+        url: https://skeiron.com.ua/
+
+  - group: Закордонні партнери
+    list:
+      - title: Організація Об’єднаних Націй з питань освіти, науки і культури (UNESCO)
+        url: https://www.unesco.org/en
+      - title: Міжнародний центр з дослідження, збереження та реставрації культурних цінностей (ICCROM)
+        url: https://www.iccrom.org/
+      - title: Міжнародна рада музеїв (ІCOM)
+        url: https://icom.museum/en/
+      - title: Міжнародна рада з охорони пам’яток та історичних місць (ІСОМОS)
+        url: https://www.icomos.org/en
+      - title: Комітет ICOM з підвищення стійкості музеїв до надзвичайних ситуацій (ICOM- DRMC)
+        url: https://drmc.mini.icom.museum/
+      - title: Загальноєвропейська федерація асоціацій із захисту культурної спадщини «Europa Nostra»
+        url: https://www.europanostra.org/
+      - title: Heritage for Peace 
+        url: https://www.heritageforpeace.org/ 
+      - title: Фонд Принца Клауса (Нідерланди)
+        url: https://princeclausfund.org/
+      - title: Смітсонівська ініціатива з порятунку культури (SCRI)
+        url: https://www.facebook.com/SmithsonianCRI/
+      - title: Фонд охорони культури Британської Ради
+        url: https://www.britishcouncil.org/
+      - title: Департамент цифрових технологій, культури, медіа та спорту (Велика Британія)
+        url: https://www.gov.uk/government/organisations/department-for-digital-culture-media-sport
+      - title: Фонд Ґерди Хенкель (Дюссельдорф, Німеччина)
+        url: https://www.gerda-henkel-stiftung.de/
+      - title: Whiting Foundation (Нью-Йорк, США)
+        url: https://www.whiting.org/
+      - title: Фонд ALIPH (Швейцарія)
+        url: https://www.aliph-foundation.org/
+      - title: Асоціація з реагування на загрози культурній спадщині – CHIEF (Італія)
+        url: https://www.facebook.com/chiefonlus
+      - title: Польський інститут у Києві
+        url: https://instytutpolski.pl/kyiv/
+      - title: Ukraine Emergency Cultural Heritage Rescue Initiative (США, Канада) ICOMOS Canada
+        url: https://canada.icomos.org/
+      - title: Логістичний центр «HUB SOS-UA» (Млини, Польща)
+        url: https://www.instagram.com/hub.sos.ua/
+      - title: Світовий фонд пам’яток (World Monument Fund, WMF)
+        url: https://www.wmf.org/
+      - title: Фонд світової спадщини (Global Heritage Fund)
+        url: https://globalheritagefund.org/
+      - title: Музей мистецтв Метрополітен (The Metropolitan Museum of Art)
+        url: https://www.metmuseum.org/

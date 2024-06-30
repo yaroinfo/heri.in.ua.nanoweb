@@ -1,0 +1,22 @@
+<%
+const heading1Sure = 'undefined' === typeof heading1 ? (page['title'] || title) : heading1;
+%>
+<%- include('/_/head'); %>
+
+<body>
+    <%- include('/_/header'); %>
+    <section class="container">
+        <%- include('/_/nav'); %>
+    </section>
+
+    <section class="container text-center mb-5" style="min-height: 30vh; max-width: 45rem">
+        <h1 class="display-3 mb-5 text-center text-uppercase text-danger"><%= heading1Sure %></h1>
+        <% if ('undefined' !== typeof error) { %>
+        <code class="alert alert-danger"><%= error %></code>
+        <% } %>
+    </section>
+
+    <%- include('/_/footer'); %>
+</body>
+
+<%- include('/_/foot'); %>

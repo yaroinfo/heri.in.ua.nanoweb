@@ -1,0 +1,11 @@
+title: Наша галерея - Штаб порятунку спадщини
+description: Галерея наших дій на порятунок спадщини української нації.
+
+page:
+  title: Наша галерея
+
+gallery:
+  full: true
+  class: gallery-full
+  thumb: 1-1-center-h300px-q81
+  directory: /img/gallery

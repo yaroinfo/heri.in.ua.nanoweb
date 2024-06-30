@@ -1,0 +1,34 @@
+$refer: /uk/dokumentuvannia.html
+$template: /layout/standard
+
+title: Documentation – Heritage Rescue Headquarters
+description: Rescue documentation expeditions of the Headquarters began with an expedition to the famous kitchen cabinet
+            with a ceramic rooster in Borodyanka, which survived despite a bombing and the collapse of the building.
+ogImage: /img/dokumentuvannia.jpeg
+page:
+  content:
+    - $class: container content-text pb-5
+      article:
+        - p: |
+            Rescue documentation expeditions of the Headquarters began with an expedition to the famous kitchen cabinet
+            with a ceramic rooster in Borodyanka, which survived despite a bombing and the collapse of the building.
+            Before dismantling and musealization, the cabinet and all its items were meticulously documented using a drone.
+            This will allow for the most accurate recreation of the artifacts in a museum exhibition in the future.
+            Since then, the Headquarters' expeditions have taken on a comprehensive character: assessing losses and risks
+            to cultural heritage objects using the international methodology of ICCROM, accompanied by photo and video
+            documentation, aerial photography using drones (to create 3D models via photogrammetry), rescuing objects - future
+            artifacts for museums, recording eyewitness testimonies and local residents, and filling out forms.
+        - p: Expeditions are preceded by thorough preparation regarding safety, prioritization of regions and objects,
+            coordination with the Ministry of Culture and Information Policy, military-civil administration, local
+            authorities, and leadership of cultural institutions, and local communities.
+        - $class: text-start
+          h2: Creating 3D Models of Destroyed Heritage
+        - p: |
+            An important result of documenting losses and damages during expeditions is the 3D model of the object.
+            Detailed documentation (laser scanning or photogrammetry) not only captures all the main characteristics and
+            the condition of the monument at the time of scanning, allows for professional analysis of the condition and
+            planning of priority rescue operations, but also enables the recreation of the monument in augmented or virtual
+            reality technology.
+        - p: In April-June, with the help of photogrammetry and laser scanning, 3D models of damaged objects were created
+            in the towns of Borodyanka and Irpin in the Kyiv region, the village of Vyazivka in the Zhytomyr region, the
+            city of Kharkiv, and the Chernihiv region..

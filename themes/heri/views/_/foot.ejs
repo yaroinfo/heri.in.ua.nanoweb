@@ -1,0 +1,12 @@
+<% const isRendering = 'undefined' !== typeof $rendering && $rendering; %>
+        <% if ('undefined' !== typeof $javascriptModules) $javascriptModules.forEach(file => { %>
+            <script src="/js/<%= file.replaceAll('$theme', $theme) %>?<%= isRendering ? r['versionSlug'] : '' %>" type="text/javascript"></script>
+        <% }); %>
+        <% if ('undefined' !== typeof googleMap) { %>
+            <script nonce="<%= r.nonce %>" src="https://maps.googleapis.com/maps/api/js?key=<%= env.GOOGLE_API_KEY %>&language=<%= $currentLang.locale %>&callback=initMap" async defer></script>
+        <% } %>
+        <% if ('undefined' !== typeof $extraJs) { %>
+            <script src="<%= $extraJs.replace('{version}', isRendering ? r['versionSlug'] : '' ) %>" type="text/javascript"></script>
+        <% } %>
+    </body>
+</html>

@@ -1,0 +1,11 @@
+title: Звіти – Штаб порятунку спадщини
+description: Звітніть по нашій діяльності.
+ogImage: /img/logo.png
+
+page:
+  title: Звіти
+  content:
+    - $class: content-max pb-5
+      article:
+        - $class: alert alert-info p-5
+          div: Сторінка ще у розробці

@@ -1,0 +1,11 @@
+$template: /layout/posts
+$catalog: novyny
+
+category: Наші новини
+title: Новини – Штаб порятунку спадщини
+
+gallery:
+  thumb: 1-1-center-h420px-q81
+
+page:
+  title: Новини

@@ -1,0 +1,15 @@
+$refer: /uk/hariacha-liniia.html
+
+title: Hotline – Heritage Rescue Headquarters
+page:
+  title: Hotline
+  content: 
+    - $class: container content-max pb-5
+      article:
+        - p: A contact line is meant for museums, institutions, organizations, and active citizens involved in the preservation of cultural heritage.
+        - p: 
+          - b: "Legal advice"
+          - ": advice for cultural institutions and their employees on the preservation of cultural heritage in times of war, responding to military challenges following national and international law, proper execution of documents related to the preservation and/or relocation of objects, recording crimes against cultural heritage, etc."
+        - p:
+          - b: Organizational, resource assistance
+          - ": assistance in activities for the protection of cultural heritage, such as provision of humanitarian, methodological, and other assistance."

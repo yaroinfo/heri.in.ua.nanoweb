@@ -1,0 +1,38 @@
+<%
+let idValue = 'undefined' === typeof id ? 'slider' : id;
+%>
+<div id="<%= idValue %>" class="carousel slide">
+    <div class="carousel-inner">
+        <% slides.forEach((item, i) => { %>
+        <div class="carousel-item <%= 0 === i ? 'active' : '' %>">
+            <% if ('object' === typeof item && 'video' === item['type']) { %>
+                <% if (item['html']) { %>
+                    <%- item['html'] %>
+                <% } else { %>
+                    <video class="d-block w-100" controls>
+                        <source src="<%= item['src'] %>" type="<%= item['mime'] %>">
+                    </video>
+                <% } %>
+            <% } else { %>
+                <img src="<%= 'string' === typeof item ? item : (item['src'] || item['orig']) %>" class="d-block w-100" alt="<%= item['alt'] || '' %>">
+                <% if (item['orig']) { %>
+                    <a href="<%= item['orig'] %>" target="_blank" class="btn btn-primary">
+                        <span class="icon-download me-2"></span>
+                        <span><%= l('Download original image', $l) %></span>
+                    </a>
+                <% } %>
+            <% } %>
+        </div>
+        <% }) %>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#<%= idValue %>"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden"><%= l('goPrev', $l) %></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#<%= idValue %>"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden"><%= l('goNext', $l) %></span>
+    </button>
+</div>

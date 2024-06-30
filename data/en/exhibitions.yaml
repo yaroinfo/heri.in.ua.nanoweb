@@ -1,0 +1,10 @@
+$refer: /uk/vystavky.html
+
+$template: /layout/posts-wide
+$catalog: exhibitions
+category: Exhibitions
+
+title: Exhibitions – Heritage Rescue Headquarters
+
+page:
+  title: Exhibitions

@@ -1,0 +1,20 @@
+$refer: /uk/meta.html
+
+title: Purpose, tasks, principles of activity - Heritage Rescue Headquarters
+ogImage: /img/logo.png
+
+page:
+  title: Purpose, tasks, principles of activity
+  content:
+    - $class: content-max pb-5
+      article:
+        - p:
+          - strong: Heritage Rescue Headquarters
+          - "(HERI) is a volunteer public initiative that arose on March 3, 2022 after the beginning of the full-scale invasion of Russia as a reaction to the losses and threats in the field of cultural heritage of Ukraine, the need to respond to the challenges and needs of cultural institutions and their employees in wartime conditions."
+        - p:
+          - strong: Headquarters Mission
+          - "- to contribute to the preservation of cultural heritage in the conditions of war, the assessment and documentation of losses and damages, as well as its post-war restoration and increased resilience to emergency situations."
+        - p:
+          - "In the middle"
+          - strong: priority areas of activity
+          - " Headquarters - providing assistance to cultural institutions and their employees, preparing to respond to emergency situations in wartime, protecting museum collections and documentation, collecting data on damage caused to cultural heritage, assessing losses and risks, coordinating actions between state / municipal authorities , military, law enforcement agencies, museum institutions, cultural institutions, the non-governmental sector and international organizations regarding the preservation of cultural heritage and its restoration."

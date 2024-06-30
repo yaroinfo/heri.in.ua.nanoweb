@@ -1,0 +1,63 @@
+<%
+const heading1Sure = 'undefined' === typeof heading1 ? (page['title'] || title) : heading1;
+%>
+<%- include('/_/head'); %>
+
+<body>
+    <%- include('/_/header'); %>
+    <section class="container">
+        <%- include('/_/nav'); %>
+    </section>
+
+    <section class="container">
+        <h1 class="text-center text-uppercase mb-4">
+            <%= heading1Sure %>
+        </h1>
+    </section>
+
+    <div class="gallery-content-wrapper <%= gallery['class'] %>">
+        <% if ('object' === typeof gallery && gallery['items'] || page['image']) { %>
+        <%- include('/_/post/gallery') %>
+        <% } %>
+
+        <% if ('undefined' !== typeof page['content']) { %>
+        <section class="container d-flex flex-wrap flex-column align-items-center gap-3">
+            <%- renderEJSContent(page.content, 'article') %>
+        </section>
+        <% } %>
+    </div>
+
+    <section class="container partners my-0 py-5">
+        <% partners.forEach(group => { %>
+            <article>
+                <h2><%= group.group %></h2>
+                <ul>
+                    <% group.list.forEach(partner => { %>
+                        <li>
+                            <% if (partner['url']) { %>
+                                <a href="<%= partner.url %>" target="_blank">
+                                    <% if (partner['logo']) { %>
+                                        <img src="<%= partner.logo %>" alt="<%= partner.title %>">
+                                    <% } %>
+                                    <span><%= partner.title %></span>
+                                </a>
+                            <% } else { %>
+                                <%= partner.title %>
+                            <% } %>
+                        </li>
+                    <% }) %>
+                </ul>
+            </article>
+        <% }) %>
+    </section>
+
+    <% if ('undefined' !== typeof stories) { %>
+    <section class="container stories pb-5 collapse" id="collapseStories">
+        <%- include('/_/stories') %>
+    </section>
+    <% } %>
+
+    <%- include('/_/footer'); %>
+</body>
+
+<%- include('/_/foot'); %>

@@ -1,0 +1,15 @@
+<% if ('undefined' !== typeof comments) { %>
+    <ul>
+    <% comments.forEach(c => { %>
+        <li>
+            <a href="<%= c.url %>" target="_blank" rel="nofollow">
+                <span class="icon-<%= c.icon %>"></span>
+                <% if ('undefined' === typeof hideText && c['text']) { %>
+                <span><%= c.text %></span>
+                <% } %>
+            </a>
+        </li>
+    <% }) %>
+    </ul>
+    <% } %>
+    

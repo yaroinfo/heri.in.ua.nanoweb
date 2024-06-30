@@ -1,0 +1,10 @@
+$refer: /uk/novyny/nashi.html
+$hidden: true
+$template: /layout/posts
+$catalog: news/ours
+
+category: Our news
+title: Our news – Heritage Rescue Headquarters
+
+page:
+  title: Our news – Heritage Rescue Headquarters

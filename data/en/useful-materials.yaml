@@ -1,0 +1,51 @@
+$refer: /uk/korysni-materialy.html
+
+title: Useful Resources - Heritage Rescue Headquarters
+
+page:
+  title: Useful Resources
+  content:
+    - $class: container books pb-5 d-flex flex-wrap
+      article:
+        - figure:
+          - $src: /img/korysni-materialy/persha-dopomoha-kulturniy-spadschini.jpg
+            $alt: "First Aid to Cultural Heritage in Emergencies: International Strategies for Ukraine"
+            $tag: img
+        - div:
+          - h2: "First Aid to Cultural Heritage in Emergencies: International Strategies for Ukraine"
+          - p: Information that might be crucial for museums, archives, libraries, and anyone caring for tangible heritage, prepared for natural threats and combat situations for those working with cultural values, is now available.
+          - p: "Make use of global experience for emergencies. Download the manual and a pocket response plan."
+          - p: "“First Aid to Cultural Heritage in Emergencies: International Strategies for Ukraine” is a quick response kit for saving and preserving assets during time-limited dangers."
+          - p:
+            - $class: btn btn-info
+              $href: /img/korysni-materialy/persha-dopomoha-kulturniy-spadschini.jpg
+              $target: _blank
+              a: 
+                - $class: icon-download me-2
+                  $tag: span
+                - Download Document
+    - $class: container books pb-5 d-flex flex-wrap
+      article:
+        - figure:
+          - $src: /img/korysni-materialy/instrukciia-zi-shvidkoho-reahuvannia-dlia-muzeif.jpg
+            $alt: "First Aid to Cultural Heritage in Emergencies: International Strategies for Ukraine"
+            $tag: img
+        - div:
+          - h2: Quick Response Instructions for Museums in War Zones, Armed Conflicts, Terrorist Acts, and Other Emergencies
+          - p: "Maidan Museum, Heritage Rescue Headquarters, 2022"
+          - p: The quick response instructions for museums were prepared by the National Museum of the Revolution of Dignity along with the Heritage Rescue Headquarters. It succinctly and specifically explains what exactly museum workers who are in the zone of military conflict or terrorist acts and other emergencies should do.
+          - p:
+            - b: "The instruction has 4 sections:"
+          - ul:
+            - li: about preventative measures, including how to organize a rescue team, what contact information to gather, how to prepare the premises for possible evacuation of items, what is necessary to have and how to better protect the building;
+            - li: initial actions in case of inevitable emergency, including what to do with museum items and how to secure the building;
+            - li: initial actions in case of an emergency;
+            - li: measures for stabilizing museum operations after an emergency.
+          - p:
+            - $class: btn btn-info
+              $href: /img/korysni-materialy/instrukciia-zi-shvidkoho-reahuvannia-dlia-muzeif.jpg
+              $target: _blank
+              a: 
+                - $class: icon-download me-2
+                  $tag: span
+                - Download Document

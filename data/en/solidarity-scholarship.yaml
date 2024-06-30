@@ -1,0 +1,39 @@
+$refer: /uk/stypendiia-solidarnosti.html
+
+title: Solidarity Scholarship – Heritage Rescue Headquarters
+description: For the International Day of Museums in 2022, the pan-European federation of cultural associations "Europa Nostra" and the Global Heritage Fund in partnership with the International Alliance for the Protection of Heritage in Conflict Zones - the ALIPH Foundation and the Headquarters Heritage Solidarity Fellowship for Ukraine was founded.
+ogImage: /img/solidarity-scholarship.jpg
+
+page:
+  tiles:
+  image: /img/solidarity-scholarship.jpg
+  content:
+    - $class: container content-max pb-5
+      div:
+        - p:
+          - "For the International Day of Museums in 2022, the pan-European federation of cultural associations Europa Nostra and the Global Heritage Fund in partnership with the International Alliance for the Protection of Heritage in Conflict Zones - the ALIPH Foundation and the Headquarters heritage rescue founded "
+          - b: Scholarship of solidarity
+          - "in the preservation of the cultural heritage of Ukraine (Heritage Solidarity Fellowship for Ukraine)."
+        - p:
+          - b: Goal
+          - " – providing support to specialists in the cultural sphere of Ukraine in times of need."
+        - p: "The amount of the one-time scholarship is 500 euros equivalent to the Ukrainian hryvnia. You could either apply for the scholarship personally or recommend another person, telling your story and arguing that you meet the criteria for the scholarship."
+        - p: "The headquarters acted as the organizer of the scholarship in Ukraine: an authoritative expert council of 10 people was created, the basic principles of granting the scholarship and the work of the expert council were developed, and full informational and organizational support was provided."
+        - p:
+            - $class: "display-3"
+              span: "2022"
+            - "year"
+        - p:
+          - "For the solidarity scholarship in 2022 "
+          - b: "1,239 applications were submitted"
+          - " from librarians, employees of archives, museums, art studios, restoration artists and not only from different parts of Ukraine. Thanks to the conducted survey and work on applications in two rounds, we learned about incredible stories of courage, devotion and rescue of our cultural heritage by Ukrainians. Members expert council elected "
+          - b: 125 people who received a scholarship
+          - " with the assistance of another partnership in this area - the Ukrainian Fulbright Circle."
+        - p: "There are 95 women and 30 men among the scholarship recipients. Among them are 84 museum workers, 28 library workers, 13 local administration workers, archival institutions and volunteers."
+        - p:
+            - $class: "display-3"
+              span: "2023"
+            - "year"
+        - p:
+          - "760 applications were submitted for the solidarity scholarship from librarians, employees of archives, museums, restoration artists, preservationists and not only from different parts of Ukraine. The members of the expert council chose "
+          - b: 83 persons who were granted a scholarship.

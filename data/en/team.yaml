@@ -1,0 +1,43 @@
+$refer: /uk/komanda.html
+
+title: Team – Heritage Rescue Headquarters
+description: |
+  The HERI coordinates its activities from two regional centers: Kyiv and Lviv. The Lviv branch includes HEMO (Ukrainian Heritage Monitoring Lab), NGO Tustan, and the State Historical and Cultural Reserve Tustan. The Kyiv branch includes the Agency for Cultural Resilience (ACURE), the NGO Maidan Museum, and the National Museum of the Revolution of Dignity. 
+ogImage: /img/logo.png
+
+page:
+  title: Team
+  content: 
+    - $class: content-max
+      article:
+        - p: "The HERI coordinates its activities from two regional centers: Kyiv and Lviv. The Lviv branch includes HEMO (Ukrainian Heritage Monitoring Lab), NGO Tustan, and the State Historical and Cultural Reserve Tustan. The Kyiv branch includes the Agency for Cultural Resilience (ACURE), the NGO Maidan Museum, and the National Museum of the Revolution of Dignity. "
+        - p: The HERI's team consists of professional museum workers, monument conservationists, managers, lawyers, architects, and artists who ensure the initiative's diverse activities.
+        - p: The HERI also invites other organizations and activists to implement various projects, especially those related to conducting damage assessments to the cultural heritage by the hostilities.
+    - $class: pb-5
+      article:
+        - $class: row
+          div: 
+            - $class: col-12 col-lg-6
+              div: 
+                - h2: Kyiv
+                - h3: Dariia Sereda
+                - p: translator, communication and organizational work
+                - h3: Oleksandr Huts
+                - p: coordination of the warehouse with the humanitarian aid
+                - h3: Oleksandr Komiakhov
+                - p: artist
+            - $class: col-12 col-lg-6
+              div: 
+                - h2: Lviv
+                - h3: Vasyl Rozhko
+                - p: Coordinator of the Rescue Center, architect, and Head of HEMO
+                - h3: Andriy Kotliarchuk
+                - p: architect, museum expert, director of the State Historical and Cultural Reserve "Tustan"
+                - h3: Roman Myska
+                - p: organizational and financial support 
+                - h3: Mariia Zadorozhna
+                - p: communications, training
+                - h3: Vladyslav Pioro
+                - p: digital solutions, object mapping
+                - h3: Yuliia Prus
+                - p: management
