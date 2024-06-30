@@ -1,34 +1,33 @@
 {
-    "name": "heri.in.ua",
-    "version": "0.0.1",
-    "description": "Static site generator on Javascript.",
-    "main": "server.js",
-    "dependencies": {
-        "nanoweb": "^0.0.20"
-    },
-    "devDependencies": {
-    },
-    "scripts": {
-      "build": "npx nanoweb render",
-      "dist": "npx nanoweb publish"
-    },
-    "repository": {
-      "type": "git",
-      "url": "git+https://github.com/yaro-rasta/nanoweb.git"
-    },
-    "keywords": [
-      "ssg",
-      "static",
-      "site",
-      "static",
-      "website",
-      "generator"
-    ],
-    "author": "Yaro",
-    "license": "MIT",
-    "bugs": {
-      "url": "https://github.com/yaro-rasta/nanoweb/issues"
-    },
-    "homepage": "https://github.com/yaro-rasta/nanoweb#readme"
+  "name": "heri.in.ua",
+  "version": "0.0.1",
+  "description": "Static site generator on Javascript.",
+  "homepage": "https://yaroinfo.github.io/heri.in.ua.nanoweb",
+  "main": "server.js",
+  "dependencies": {
+    "nanoweb": "^0.0.20"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "npx nanoweb render",
+    "dist": "npx nanoweb publish",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yaro-rasta/nanoweb.git"
+  },
+  "keywords": [
+    "ssg",
+    "static",
+    "site",
+    "static",
+    "website",
+    "generator"
+  ],
+  "author": "Yaro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yaro-rasta/nanoweb/issues"
   }
-  
+}
