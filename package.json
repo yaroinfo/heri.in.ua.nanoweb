@@ -4,7 +4,7 @@
     "description": "Static site generator on Javascript.",
     "main": "server.js",
     "dependencies": {
-        "nanoweb": "^0.0.18"
+        "nanoweb": "^0.0.19"
     },
     "devDependencies": {
     },
