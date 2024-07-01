@@ -22,7 +22,7 @@ jobs:
       run: npm install  # Using npm ci for a clean install
       
     - name: Render the site
-      run: npm run build
+      run: npm run dist
 
     - name: List the files in ./dist
       run: ls -lah ./dist
