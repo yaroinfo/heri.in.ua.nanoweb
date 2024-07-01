@@ -24,6 +24,9 @@ jobs:
     - name: Render the site
       run: npm run dist
 
+    - name: Adding a custom domain
+      run: echo "heri-nw.yaro.page" > ./dist/CNAME
+
     - name: List the files in ./dist
       run: ls -lah ./dist
 
