@@ -24,6 +24,9 @@ jobs:
     - name: Render the site
       run: npm run build
 
+    - name: List the files in ./dist
+      run: ls -lah ./dist
+
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
