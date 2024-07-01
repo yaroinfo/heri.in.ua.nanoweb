@@ -5,10 +5,11 @@
   "homepage": "https://yaroinfo.github.io/heri.in.ua.nanoweb",
   "main": "server.js",
   "dependencies": {
-    "nanoweb": "^0.0.20"
+    "nanoweb": "^0.0.21"
   },
   "devDependencies": {},
   "scripts": {
+    "start": "npx nanoweb server --verbose",
     "build": "npx nanoweb render",
     "dist": "npx nanoweb publish",
     "deploy": "gh-pages -d dist"
