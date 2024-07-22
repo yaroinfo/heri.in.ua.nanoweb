@@ -2,13 +2,18 @@
     "name": "heri-theme",
     "version": "0.1.0",
     "description": "Heri.in.ua theme",
-    "main": "src/index.js",
+    "main": "js/index.js",
     "dependencies": {
-        "bootstrap": "^5.3.2"
+        "bootstrap": "^5.3.3",
+        "hamburgers": "^1.2.1",
+        "nanoweb": "^0.5.1",
+        "nanoweb-fs": "^1.2.3"
     },
-    "devDependencies": {
-    },
+    "devDependencies": {},
     "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "echo \"Nothing to build\" && exit 0",
+        "watch": "echo \"Nothing to watch for\" && exit 0"
     },
     "author": "Yaro <support@yaro.page>",
     "license": "MIT"

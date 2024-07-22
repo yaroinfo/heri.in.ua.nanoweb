@@ -1,37 +1,28 @@
 name: Deploy Nanoweb Site
-
 on:
   push:
     branches:
       - main
-
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
-
-    - name: Set up Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: '21'  # Use the version of Node.js that you prefer
-
-    - name: Install dependencies
-      run: npm install  # Using npm ci for a clean install
-      
-    - name: Render the site
-      run: npm run dist
-
-    - name: Adding a custom domain
-      run: echo "heri-nw.yaro.page" > ./dist/CNAME
-
-    - name: List the files in ./dist
-      run: ls -lah ./dist
-
-    - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./dist  # Ensure this matches your DIST_DIR setting in Nanoweb
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "21"
+      - name: Install dependencies
+        run: npm install
+      - name: Init the website
+        run: npm run init
+      - name: Render the website
+        run: npm run dist
+      - name: Add a custom domain
+        run: echo "heri.in.ua" > ./dist/CNAME
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GH_PAT }}
+          publish_dir: ./dist

@@ -1,22 +1,13 @@
 {
-  "name": "heri.in.ua",
-  "version": "0.0.1",
   "description": "Static site generator on Javascript.",
-  "homepage": "https://yaroinfo.github.io/heri.in.ua.nanoweb",
   "main": "server.js",
-  "dependencies": {
-    "nanoweb": "^0.0.21"
-  },
-  "devDependencies": {},
   "scripts": {
-    "start": "npx nanoweb server --verbose",
+    "init": "npx nanoweb init",
+    "start": "npx nanoweb server",
     "build": "npx nanoweb render",
-    "dist": "npx nanoweb publish",
+    "dist": "npx nanoweb render && npx nanoweb publish --skip-render",
+    "dist:why": "echo \"async function to install dependencies does not work properly in nanoweb render\"",
     "deploy": "gh-pages -d dist"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/yaro-rasta/nanoweb.git"
   },
   "keywords": [
     "ssg",
@@ -26,8 +17,18 @@
     "website",
     "generator"
   ],
-  "author": "Yaro",
   "license": "MIT",
+  "dependencies": {
+    "nanoweb": "^0.5.1"
+  },
+  "name": "heri.in.ua",
+  "version": "0.0.1",
+  "homepage": "https://yaroinfo.github.io/heri.in.ua.nanoweb",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yaro-rasta/nanoweb.git"
+  },
+  "author": "Yaro",
   "bugs": {
     "url": "https://github.com/yaro-rasta/nanoweb/issues"
   }
