@@ -1,0 +1,11 @@
+version: '3.8'
+name: heri-in-ua-www
+services:
+  web:
+    container_name: heri-in-ua-web
+    image: nginx:alpine
+    ports:
+      - "8080:80"
+    volumes:
+      - ./dist:/usr/share/nginx/html:ro
+    restart: always
