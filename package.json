@@ -19,7 +19,7 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "nanoweb": "^0.5.1"
+    "nanoweb": "^0.5.2"
   },
   "name": "heri.in.ua",
   "version": "0.0.1",

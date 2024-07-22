@@ -1,6 +1,6 @@
 all:
   ROOT_DIR: '.'
-  HOST: heri.in.ua
+  HOST: https://heri.in.ua
   SERVER_PORT: 3303
   STATIC_ALLOWED:
     - /favicon.ico
